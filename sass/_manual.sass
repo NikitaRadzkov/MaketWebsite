@@ -1,0 +1,51 @@
+.manual
+	font-family: 'ProximaNova-Light'
+	color: $text-color-light
+	font-size: 16px
+	&-bg
+		background: #000 url(../img/manual/manual-bg.png) center no-repeat
+		background-size: cover
+	&-arrow
+		position: absolute
+		top: 23%
+		left: 100%
+		transform: translateX(-50%)
+		&_1
+			opacity: 0
+			transition: all 2s
+			&-active
+				transition: all 2s
+				opacity: 1
+		&_2
+			opacity: 0
+			transition: all 2s
+			&-active
+				transition: all 2s
+				opacity: 1
+				transition-delay: 0.5s
+		&_3
+			opacity: 0
+			transition: all 2s
+			&-active
+				transition: all 2s
+				opacity: 1
+				transition-delay: 1s
+
+	&-block
+		text-align: center
+		&__img
+			margin-bottom: 27px
+			img
+				max-width: 98px
+				max-height: 98px
+		&__text
+			margin: 0 auto
+			width: 203px
+			&_order
+				margin-top: 21px
+				display: block
+				font-size: 15px
+				color: $active-color
+				text-decoration: underline
+				&:hover
+					color: $text-color-light

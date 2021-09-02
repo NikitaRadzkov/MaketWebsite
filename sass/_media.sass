@@ -1,0 +1,669 @@
+@media (max-width: 1440px)
+	.materials // Секция Материалы
+		&-img
+			// left: 0
+			transform: translate(278%,-132px)
+
+	.tools // Секция Инструменты
+		&-img
+			transform: translate(10%,-100px)
+
+@media (max-width: 1366px)
+	.materials // Секция Материалы
+		&-img
+			// left: 0
+			transform: translate(278%,-112px)
+			height: 350px
+
+	.tools // Секция Инструменты
+		&-img
+			transform: translate(10%,-80px)
+			height: 300px
+
+
+
+@media (max-width: 1199px)
+	.main //Главная секция
+		.advantages
+			&-title
+				h1
+					margin-bottom: 60px
+					font-size: 29px
+			&-subtitle
+				margin-bottom: 60px
+				font-size: 19px
+			&-block
+				margin-bottom: 70px
+				height: 34px
+				&:last-child
+					margin-bottom: 0
+				&__img
+					justify-content: center
+					margin-right: 15px
+				&__text
+					font-size: 14px
+	.form //Форма
+		&-main
+			padding: 30px 39px
+		&-title
+			margin-bottom: 15px
+		&-button
+			margin-bottom: 15px
+			padding: 20px 38px
+
+	.section-title //Заголовок секций
+		h2
+			margin-top: 0
+			margin-bottom: 85px
+
+	.section-slider	//Секция со слайдером
+		padding: 82px 0
+
+	.materials // Секция Материалы
+		&-img
+			transform: translate(272%,-112px)
+			height: 300px
+
+	.tools // Секция Инструменты
+		&-img
+			transform: translate(3%,-80px)
+			height: 250px
+
+	.prototyping // Секция Макетирование
+		&-img
+			transform: translate(-3%,-82px)
+			height: 250px
+
+	.slider // Слайдер
+		&-left
+			transform: translateX(-20px)
+		&-right
+			transform: translateX(20px)
+
+	.form //Форма в секции "Оставьте заявку""
+		&-main
+			&_order
+				padding: 0
+		&-order
+			&-input
+				margin-bottom: 10px
+			&-button
+				margin-bottom: 0
+				width: 290px
+				padding: 17px 10px
+
+	.manual //Секция "как заказать?"
+		&-arrow
+			width: 110px
+
+	.delivery //Секция доставка
+		&-block
+			margin-bottom: 50px
+			&__img
+				margin-bottom: 20px
+			&_last1
+				margin-bottom: 0
+			&_last2
+				margin-bottom: 0
+	.politic-popup
+		top: 50px
+		left: 2%
+		transform: translateX(0)
+		width: 96%
+
+
+
+
+@media (max-width: 991px)
+	button
+		cursor: default
+	.nav-menu	//Меню (открывается через кнопку)
+		position: fixed
+		top: 0
+		left: 0
+		height: 100%
+		width: 100%
+		z-index: 1
+		background: #000 url(../img/main/bg-main.png) center no-repeat
+		background-size: cover
+		left: -100%
+		transition: all 0.5s
+	.nav-menu_active
+		left: 0
+	.menu
+		position: absolute
+		padding: 20px
+		top: 0
+		left: 0
+		right: 0
+		border: none
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		&-link
+			display: block
+		&-title
+			text-align: center
+			width: 100%
+			border-bottom: 1px solid rgba(#fff,.2)
+			cursor: default
+			&:hover			
+			a
+				display: block
+				padding: 15px 0
+				width: 100%
+				height: 100%
+				font-size: 20px
+				cursor: default
+				&:hover
+					color: $text-color-light
+			&:last-child
+				border: none
+
+	.header //Хэдер
+		margin-bottom: 40px
+		&-logo
+			cursor: default
+		&-adress
+			width: 100%
+			margin-left: 20px
+			margin-bottom: 5px
+			&_email
+				margin-left: 9px
+				margin-bottom: 0
+				a:hover
+					color: $text-color-light
+		&-contacts
+			&__phone
+				a
+					&:hover
+						color: $text-color-light
+			&__order
+				cursor: default
+				&:hover
+					color: $header-color
+					cursor: default
+
+	.main //Главная секция
+		padding-bottom: 70px
+		.advantages
+			&-title
+				h1
+					margin-bottom: 30px
+					text-align: center
+					font-size: 33px
+			&-subtitle
+				margin-bottom: 40px
+				font-size: 20px
+				text-align: center
+			&-block
+				margin-left: 13px
+				margin-bottom: 40px
+				height: 36px
+				&:last-child
+					margin-bottom: 40px
+				&__img
+					margin-right: 25px
+	.form // Форма
+		&-main
+			padding: 39px 54px
+		&-title
+			margin-bottom: 30px
+			font-size: 21px
+		&-input
+			font-size: 15px
+		&-button
+			margin-bottom: 20px
+			padding: 23px 38px
+			&:hover
+				background-color: $active-color
+				color: $text-color-light
+		&-small
+			.show-politic
+				cursor: default
+				color: $active-color
+				&:hover
+					color: $active-color
+
+	.popup // Форма в модальном окне
+		top: 50px
+		&_close
+			cursor: default
+			&:hover
+				color: $text-form-color
+		.politic-popup
+		&_close-politic
+			cursor: default
+			&:hover
+				color: $text-form-color
+
+	.section-title // Заголовок секций
+		h2
+			margin-bottom: 60px
+			font-size: 31px
+			&::after
+				display: none
+
+	.section-slider	//Секция со слайдером
+		padding: 60px 0
+
+	.lego-img // Картинки с лего
+			display: none
+
+	.slider // Слайдер
+		&-block
+			&__button
+				cursor: default
+				&:hover
+					background-color: transparent
+					color: $active-color
+					& .slider-block__button_img
+						background: url(../img/shopping-cart.png) 0 0 no-repeat
+		&-left
+			transform: translateX(-30px)
+			&:hover
+				background: transparent url(../img/slider-arrow-left.png) 0 0 no-repeat
+				cursor: default
+			
+		&-right
+			transform: translateX(30px)
+			&:hover
+				background: transparent url(../img/slider-arrow-right.png) 0 0 no-repeat
+				cursor: default
+
+	.form //Форма в секции "Оставьте заявку""
+		&-main
+			&_order
+				padding: 0
+		&-order
+			&-button
+				margin-bottom: 0
+				width: 290px
+				padding: 18px 10px
+
+	.manual //Секция "как заказать?"
+		&-arrow
+			display: none
+		&-section-title
+			h2
+				margin-bottom: 60px
+		&-block
+			margin-bottom: 60px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: center
+			align-items: center
+			&_last
+				margin-bottom: 0
+			&__img
+				margin: 0
+				margin-right: 30px
+			&__text
+				text-align: left
+				margin: 0
+				&_order
+					cursor: default 
+					&:hover
+						color: $active-color
+
+	.contacts
+		font-size: 14px
+		&-block
+			&__text
+				a:hover
+					color: $text-color-dark
+
+	.feedback
+		padding: 50px 0
+		&-text
+			font-size: 20px
+			&__click
+				cursor: default
+				&:hover
+					color: $header-color
+
+	.map
+		padding: 0px 15px
+
+	.footer //Футер
+		&-logo
+			cursor: default
+		&-adress
+			&_email
+				margin-left: 3px
+				a
+					&:hover
+						color: $text-color-light
+		&-contacts
+			&__phone
+				a
+					&:hover
+						color: $text-color-light
+			&__order
+				cursor: default
+				&:hover
+					color: $header-color
+
+
+@media (max-width: 767px)
+	.header // Хэдер
+		margin-bottom: 30px
+		&-logo
+		&-adress
+			margin-left: 5px
+			&_email
+				margin-left: -5px
+			&__icon
+				margin-right: 8px
+				width: 13px
+			&__text
+				font-size: 12px
+		&-contacts
+			&__phone
+				margin-bottom: 18px
+				a
+					font-size: 17px
+			&__order
+				font-size: 11px
+
+	.main // Главная секция
+		padding-bottom: 60px
+		.advantages
+			&-title
+				h1
+					color: $header-color
+					font-size: 28px
+			&-subtitle
+				font-size: 19px
+			&-block
+				margin-bottom: 20px
+				padding-bottom: 20px
+				height: 51px
+				border-bottom: 1px solid	rgba(#fff,.15) 	
+				&__img
+					justify-content: center
+					margin-left: 25px
+					margin-right: 45px
+				&__text	
+					font-size: 16px	
+				&:last-child
+					margin-bottom: 20px
+				&_last
+					border: none
+
+	.form // Форма
+		&-main
+			padding: 25px 45px
+		&-title
+			margin-bottom: 20px
+			font-size: 19px
+		&-input
+			font-size: 14px
+		&-textarea
+			margin-bottom: 15px
+		&-button
+			margin-bottom: 15px
+			padding-top: 20px
+			padding-bottom: 20px
+		&-small
+			font-size: 10px
+
+	.section-title // Заголовок секций
+		h2
+			margin-bottom: 40px
+			font-size: 30px	
+
+	.slider // Слайдер
+		&-left
+			transform: translateX(1px)
+		&-right
+			transform: translateX(-1px)
+
+	.form //Форма в секции "Оставьте заявку""
+		&-main
+			&_order
+				padding: 0
+		&-order
+			&-button
+				margin-bottom: 0
+				width: 201px
+
+	.delivery
+		&-block
+			&_last1
+				margin-bottom: 50px
+
+	.contacts
+		&-block
+			margin-bottom: 50px
+			&_last
+				margin-bottom: 0
+
+	.feedback
+		padding: 40px 0
+		&-text
+			font-size: 19px
+
+	.footer // Футер
+		&-adress
+			margin-left: 0
+			&__icon
+				margin-right: 8px
+				width: 13px
+			&__text
+				font-size: 12px
+
+	.message-popup
+		top: 100px
+		left: 2%
+		transform: translateX(0)
+		width: 96%
+		padding: 30px 0px 20px 0px
+		&_close-message
+			cursor: default
+			&:hover
+				color: $text-form-color
+
+
+@media (max-width: 576px)
+	.header // Хэдер
+		&-logo
+			margin-left: 33px
+		&-adress
+			display: none
+		&-contacts
+			&__phone
+				a
+						font-size: 21px
+			&__order
+				font-size: 14px	
+
+	.main // Главная секция
+		padding-bottom: 40px
+		.advantages
+			&-title
+				h1
+					margin-bottom: 15px
+					font-size: 22px
+			&-subtitle
+				margin-bottom: 40px
+				text-align: center
+				font-size: 17px
+			&-block	
+				&__img
+					justify-content: center
+					margin-left: 15px
+					margin-right: 25px
+				&__text	
+					font-size: 16px	
+
+	.form // Форма
+		&-main
+			padding: 39px 40px
+	.popup // Форма в модальном окне
+		left: 2%
+		transform: translateX(0)
+		width: 96%
+
+		.form
+			&-main
+				padding: 30px 15px
+
+
+	.section-title // Заголовок секций
+		h2
+			font-family: 'ProximaNova-Bold'
+			font-size: 25px
+
+	.section-slider	//Секция со слайдером
+		padding: 40px 0
+
+	.slider // Слайдер
+		text-align: center
+		&-block
+			&__img
+				img
+			&__name
+				margin-bottom: 5px
+			&__price
+				margin-bottom: 15px
+			&__button
+				padding: 16px 50px
+
+	.form //Форма в секции "Оставьте заявку""
+		&-main
+			&_order
+				padding: 0
+
+	.manual //Секция "как заказать?"
+		&-block
+			&__img
+				img
+					max-width: 75px
+					max-height: 75px
+			&__text
+				font-size: 14px
+				a
+					margin-top: 10px
+					font-size: 13px
+
+	.delivery // Секция "Доставка"
+		font-size: 14px
+
+	.feedback
+		padding: 40px 0
+		&-text
+			font-size: 17px
+
+	.footer //Футер
+		&-adress
+			display: none
+		&-contacts
+			&__phone
+				a
+						font-size: 21px
+			&__order
+				font-size: 14px	
+
+
+
+
+
+
+
+@media (max-width: 425px)
+	.header // Хэдер
+		margin-bottom: 22px
+		&-logo
+		&-contacts
+			&__phone
+				a
+					font-size: 14px
+			&__order
+				font-size: 12px
+
+	.main // Главная секция
+		.advantages
+			&-title
+				h1
+					margin-bottom: 10px
+					font-size: 20px
+			&-subtitle
+				margin-bottom: 20px
+				font-size: 15px
+			&-block
+				margin-bottom: 10px
+				padding-bottom: 10px
+				height: 41px
+				&__img
+					margin-left: 5px
+					margin-right: 15px
+				&__text
+					font-size: 13px
+				&:last-child
+					margin-bottom: 10px
+
+	.form // Форма
+		&-main
+			padding: 20px 9px
+		&-title
+			margin-bottom: 15px
+			font-size: 16px
+		&-input
+			padding-top: 15px
+			padding-bottom: 15px
+			font-size: 13px
+		&-textarea
+			margin-bottom: 5px
+		&-button
+			margin-bottom: 10px
+			padding-top: 15px
+			padding-bottom: 15px
+
+	.section-title // Заголовок секций
+		h2
+			font-size: 19px
+
+	.form //Форма в секции "Оставьте заявку""
+		&-main
+			&_order
+				padding: 0 9px
+
+	.feedback
+		&-text
+			font-size: 15px
+
+	.footer // Футер
+		&-contacts
+			&__phone
+				a
+					font-size: 14px
+			&__order
+				font-size: 12px
+	.politic-popup
+		font-size: 14px
+		&__text
+			padding: 20px
+
+
+@media (max-width: 320px)
+	.header
+		&-logo
+			margin-left: 13px
+			padding-left: 0
+
+	.section-title // Заголовок секций
+		h2
+			font-size: 18px
+
+	.slider // Слайдер
+		&-left
+			top: 62%
+			transform: translateX(-12px)
+		&-right
+			top: 62%
+			transform: translateX(12px)

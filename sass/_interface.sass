@@ -1,0 +1,169 @@
+button
+	cursor: pointer
+.form	// Форма
+	text-align: center
+	background: #fff
+	&-main
+		padding: 35px 39px 39px 39px
+	&-title
+		font-family: 'ProximaNova-Bold'
+		margin-bottom: 28px
+		font-size: 18px
+		color: #000
+	&-input
+		margin-bottom: 10px
+		padding: 16px 0
+		width: 100%
+		text-align: center
+		font-size: 13px
+		font-family: 'ProximaNova-Regular'
+		color: $text-form-color
+		border: 1px solid #e8e8e8
+		&:invalid
+		box-shadow: none
+		
+	&-textarea
+		margin-bottom: 23px
+		resize: none
+	&-button
+		margin-bottom: 19px
+		padding: 19px 37px
+		box-shadow: 0 6px 18px rgba(28, 167, 173, 0.32)
+		background-color: $active-color
+		color: $text-color-light
+		text-transform: uppercase
+		font-family: 'ProximaNova-Bold'
+		border: none
+		transition: background-color 2s
+		&:hover
+			background-color: $text-color-light
+			color: $active-color
+	&-small
+		font-family: 'ProximaNova-Regular'
+		font-size: 11px
+		color: $text-form-color
+		.show-politic
+			cursor: pointer
+			text-decoration: underline
+			color: $text-form-color
+			&:hover
+				color: $active-color
+
+.lego-img //Картинки с лего
+	position: absolute
+
+.section-slider //Секция со слайдами
+	padding: 91px 0 101px 0
+	position: relative
+
+.section-title //Заголовок секции
+	h2
+		margin-bottom: 122px
+		text-align: center
+		font-family: 'ProximaNova-Light'
+		font-size: 36px
+		&::after
+			content: ''
+			display: block
+			left: 0
+			right: 0
+			margin: 0 auto
+			position: absolute
+			margin-top: 19px
+			width: 31px
+			height: 2px
+			background-color: $active-color
+
+.draggable	// Слайдер
+	height: 210px
+.slider
+	&-block
+		text-align: center
+		&__img
+			margin: 0 auto
+			margin-bottom: 25px
+			background-color: #fff
+			height: 210px
+			width: 265px
+			object-fit: none
+			img
+				object-fit: none
+				padding-top: 50%
+				transform: translateY(-40%)
+				margin: auto
+				max-height: 100%
+				max-width: 100%
+		&__name
+			margin: 0 auto
+			margin-bottom: 17px
+			max-width: 234px
+			font-family: 'ProximaNova-Regular'
+			font-size: 15px
+			color: $text-color-dark
+		&__price
+			margin-bottom: 24px
+			font-family: 'ProximaNova-Bold'
+			font-size: 17px
+			color: $text-color-dark
+		&__button
+			padding: 18px 55px
+			background-color: transparent
+			color: $active-color
+			border: 1px solid $active-color
+			font-size: 13px
+			text-transform: uppercase
+			font-family: 'ProximaNova-Bold'
+			transition: background 1.5s
+			transition: color 1.5s
+			transition: background-color 1.5s
+			display: inline-block
+			vertical-align: middle
+			cursor: pointer
+			&:hover
+				background-color: $active-color
+				color: $text-color-light
+				& .slider-block__button_img
+					background: url(../img/shopping-cart-hover.png) 0 0 no-repeat
+					transition: background 1.5s
+					transition: color 1.5s
+					transition: background-color 1.5s
+			&_img
+				display: inline-block
+				vertical-align: middle
+				margin-right: 19px
+				background: url(../img/shopping-cart.png) 0 0 no-repeat
+				background-size: cover
+				width: 17px
+				height: 16px
+				transition: background 1.5s
+				transition: color 1.5s
+				transition: background-color 1.5s
+			&_text
+				display: inline-block
+				vertical-align: middle
+	&-left
+		position: absolute
+		z-index: 3
+		background: transparent url(../img/slider-arrow-left.png) 0 0 no-repeat
+		width: 18px
+		height: 30px
+		left: 0
+		transform: translateX(-30px)
+		top: 50%
+		transition: background 1s
+		&:hover
+			cursor: pointer
+			background: transparent url(../img/slider-arrow-left-hover.png) 0 0 no-repeat
+	&-right
+		position: absolute
+		z-index: 3
+		background: transparent url(../img/slider-arrow-right.png) 0 0 no-repeat
+		width: 18px
+		height: 30px
+		right: 0
+		transform: translateX(30px)
+		top: 50%
+		transition: background 1s
+		&:hover
+			cursor: pointer
+			background: transparent url(../img/slider-arrow-right-hover.png) 0 0 no-repeat

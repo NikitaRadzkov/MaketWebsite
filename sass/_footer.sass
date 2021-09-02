@@ -1,0 +1,57 @@
+.footer-bg
+	background-color: $bg-color-dark
+	background-size: cover
+
+.footer
+	padding-top: 20px
+	padding-bottom: 24px
+	color: $text-color-light
+	font-family: 'MyriadPro-Regular'
+	&-adress
+		margin-left: 3px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		height: 31px
+		&_email
+			margin-left: 20px
+		&__icon
+			margin-right: 19px
+			margin-bottom: 3px
+		&__text
+			display: inline-block
+			font-size: 13px
+	&-mail
+		&__icon
+			margin-bottom: 0
+			margin-top: 1px
+		&__text
+			a
+				cursor: default
+				color: $text-color-light
+				&:hover
+					color: $header-color
+	&-contacts
+		display: flex
+		justify-content: flex-end
+		flex-wrap: wrap
+		&__phone
+			margin-bottom: 12px
+			a
+				cursor: default
+				color: $text-color-light
+				text-decoration: none
+				font-size: 18px
+				&:hover
+					color: $header-color
+		&__order
+			font-family: 'ProximaNova-Light'
+			color: $header-color
+			text-decoration: none
+			font-size: 13px
+			text-decoration: underline
+			&:hover
+				color: $text-color-light

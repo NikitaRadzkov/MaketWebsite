@@ -1,0 +1,76 @@
+.nav-menu
+	margin-bottom: 86px
+.menu
+	margin: 0
+	padding: 11px 0
+	display: flex
+	justify-content: space-around
+	list-style: none
+	border-top: 1px solid rgba(#fff,.2)
+	border-bottom: 1px solid rgba(#fff,.2)
+	&-title
+		a
+			font-size: 13px
+			font-weight: 400
+			text-transform: uppercase
+			font-family: 'ProximaNova-Light'
+			color: $text-color-light
+			text-decoration: none
+			&:hover
+				color: $active-color
+	&-link
+		display: none
+		width: 40px
+		height: 39px
+		background-color: #111
+		border-radius: 35%
+		box-shadow: 1px 1px 5px rgba(0,0,0,.2)
+		position: fixed
+		top: 10px
+		left: 10px
+		z-index: 99
+		span
+			display: block
+			height: 2px
+			width: 18px
+			position: absolute
+			left: 50%
+			margin-left: -9px
+			top: 50%
+			margin-top: -2px
+			background-color: #fff
+			&::before
+				content: ''
+				display: block
+				height: 2px
+				width: 18px
+				position: absolute
+				left: 50%
+				margin-left: -9px
+				top: 50%
+				background-color: #fff
+				margin-top: 4px
+				transition: all 0.2s
+			&::after
+				content: ''
+				display: block
+				height: 2px
+				width: 18px
+				position: absolute
+				left: 50%
+				margin-left: -9px
+				top: 50%
+				background-color: #fff
+				margin-top: -6px
+				transition: all 0.2s
+		&_active
+			span
+				background-color: transparent
+				&::before
+					margin-top: 0
+					transform: rotate(135deg)
+					background-color: $active-color
+				&::after
+					margin-top: 0
+					transform: rotate(-135deg)
+					background-color: $active-color
